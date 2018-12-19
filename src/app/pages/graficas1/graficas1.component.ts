@@ -11,8 +11,6 @@ export class Graficas1Component implements OnInit {
 
   // graficodonas.component.ts
 
-  
-
   graficos: any = {
     'grafico1': {
       'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
