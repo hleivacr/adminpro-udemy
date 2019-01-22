@@ -16,16 +16,16 @@ ajustes: Ajustes = {
   }
 
   guardarAjustes() {
-    console.log('guardado en el localstorage');
+    // console.log('guardado en el localstorage');
     localStorage.setItem('ajustes', JSON.stringify(this.ajustes));
   }
 cargarAjustes() {
   if ( localStorage.getItem('ajustes') ) {
     this.ajustes = JSON.parse(localStorage.getItem('ajustes'));
-    console.log('cargarndo del localstorage');
+    // console.log('cargarndo del localstorage');
     this.aplicarTema(this.ajustes.tema);
   } else {
-  console.log('cargando valores por defecto');
+  // console.log('cargando valores por defecto');
   }
 }
 
